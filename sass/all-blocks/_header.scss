@@ -1,0 +1,194 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    height: 96px;
+    flex-shrink: 0;
+    width: 100%;
+    background-color: $white_color;
+    margin-bottom: 96px;
+    &__leftbox {
+        display: flex;
+        &__add {
+            display: none;
+            @include for-mobile {
+                display: block;
+            }
+        }
+        &__logo {
+            padding: 34px 0 34px 165px;
+            @include for-tablet {
+                padding: 34px 0 34px 40px;
+            }
+            @include for-mobile {
+                margin: 22px 0 22px 99px;
+            }
+        }
+        &__menu {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 32px;
+            padding: 36px 0 36px 58px;
+            @include for-mobile {
+                flex-direction: column;
+                position: fixed;
+                top: 97px;
+                left: 0;
+                background-color: $footer-color;
+                height: 100vh;
+                width: 256px;
+                padding-left: 32px;
+                transform: translateX(150%);
+            }
+            &__item--mobile {
+                display: none;
+                @include for-mobile {
+                    display: block;
+                    margin: 200px 0 0 0;
+                }
+            }
+            &__item {
+                color: $secondary_color;
+                font-size: 15px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 25px;
+            }
+        }
+    }
+    &__rightbox {
+        &__button {
+            width: 180px;
+            height: 53px;
+            flex-shrink: 0;
+            background-color: $button_color;
+            color: $white_color;
+            border: none;
+            margin: 22px 165px 22px 0;
+            @include for-tablet {
+                margin: 22px 40px 22px 0;
+            }
+            @include for-mobile {}
+        }
+    }
+    &__leftbox__add button {
+        background: none;
+        border: none;
+    }
+    &__remove__btn {
+        display: none;
+        margin: 23px 0 0 33px;
+    }
+    &__add__btn {
+        margin: 23px 0 0 33px;
+    }
+}
+
+.show {
+    transform: translateX(0);
+}
+
+.header-bg {
+    background-image: url('../../images/header-images/header\ bg.jpg');
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 96px;
+    @include for-tablet {
+        background-image: url('../../images/header-images/tablet\ bg.jpg');
+    }
+    @include for-mobile {
+        background-image: url('../../images/header-images/phone\ bg.jpg');
+    }
+}
+
+.header {
+    &__title {
+        max-width: 600px;
+        color: #FFF;
+        font-size: 56px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: 56px;
+        letter-spacing: -2.5px;
+        padding: 153px 0 0 165px;
+        @include for-tablet {
+            max-width: 650px;
+            color: #FFF;
+            text-align: center;
+            font-size: 56px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 56px;
+            letter-spacing: -2.5px;
+            padding-top: 137px;
+        }
+        @include for-mobile {
+            max-width: 311px;
+            color: #FFF;
+            text-align: center;
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 40px;
+            letter-spacing: -1.786px;
+            padding: 97px 0 0 30px;
+        }
+    }
+    &__p {
+        max-width: 405px;
+        color: #FFF;
+        font-family: $main_font;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 25px;
+        margin: 40px 0 0 260px;
+        @include for-tablet {
+            max-width: 573px;
+            color: #FFF;
+            text-align: center;
+            font-family: $main_font;
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 25px;
+            margin: 24px 0 0 97px;
+        }
+        @include for-mobile {
+            max-width: 311px;
+            color: #FFF;
+            text-align: center;
+            font-family: $main_font;
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 25px;
+            margin: 24px 0 0 24px;
+        }
+    }
+    &__button {
+        margin: 40px 0 0 260px;
+        width: 180px;
+        height: 53px;
+        flex-shrink: 0;
+        background-color: $button_color;
+        color: #FFF;
+        text-align: center;
+        font-family: Space Mono;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 25px;
+        @include for-tablet {
+            margin: 32px 0 0 294px;
+        }
+        @include for-mobile {
+            margin: 34px 0 0 85px;
+        }
+    }
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <div class="navbar">
+                    <div class="navbar__leftbox">
+                        <div class="navbar__leftbox__add">
+                            <button class="navbar__add__btn"><img src="./images/header-images/logo/add btn.svg" alt="add btn"></button>
+                            <button class="navbar__remove__btn"><img src="./images/header-images/logo/remove btn.svg" alt="remove btn"></button>
+                        </div>
+                        <a class="navbar__leftbox__logo" href="./index.html"><img src="./images/header-images/logo/navbar logo.svg" alt="logo"></a>
+                        <ul class="navbar__leftbox__menu">
+                            <li class="navbar__leftbox__menu__item">About</li>
+                            <li class="navbar__leftbox__menu__item">Location</li>
+                            <li class="navbar__leftbox__menu__item">Careers</li>
+                            <li class="navbar__leftbox__menu__item navbar__leftbox__menu__item--mobile">
+                                <div class="navbar__rightbox">
+                                    <button class="navbar__rightbox__button">Get Scootin</button>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="navbar__rightbox">
+                        <button class="navbar__rightbox__button">Get Scootin</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="header-bg">
+            <div class="container">
+                <div class="header">
+                    <h1 class="header__title">Scooter sharing made simple</h1>
+                    <p class="header__p">Scoot takes the hassle out of urban mobility. Our bikes are placed in convenient locations in each of our cities. Use our app to locate the nearest bike, unlock it with a tap, and you’re away!</p>
+                    <button class="header__button">Get Scootin</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="section1">
+            <div class="container">
+                <div class="wrapper">
+                    <div class="servis">
+                        <img class="servis__img" src="./images/main-images/logo/phone.svg" alt="card">
+                        <div class="servis__text">
+                            <h4 class="servis__text__h4">Locate with app</h4>
+                            <p class="servis__text__p">Use the app to find the nearest scooter to you. We are continuously placing scooters in the areas with most demand, so one should never be too far away. </p>
+                        </div>
+                    </div>
+                    <div class="servis">
+                        <img class="servis__img" src="./images/main-images/logo/phone.svg" alt="card">
+                        <div class="servis__text">
+                            <h4 class="servis__text__h4">Locate with app</h4>
+                            <p class="servis__text__p">Use the app to find the nearest scooter to you. We are continuously placing scooters in the areas with most demand, so one should never be too far away. </p>
+                        </div>
+                    </div>
+                    <div class="servis">
+                        <img class="servis__img" src="./images/main-images/logo/phone.svg" alt="card">
+                        <div class="servis__text">
+                            <h4 class="servis__text__h4">Locate with app</h4>
+                            <p class="servis__text__p">Use the app to find the nearest scooter to you. We are continuously placing scooters in the areas with most demand, so one should never be too far away. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script>
+        const btn = document.querySelector('.navbar__add__btn');
+        const menu = document.querySelector('navbar__leftbox__menu');
+        const remove__btn = document.querySelector('.navbar__remove__btn')
+
+        btn.addEventListener('click', () => {
+            menu.classList.add('show');
+            navbar__btn.style.display = 'block'
+        })
+    </script>
+</body>
+
+</html>
