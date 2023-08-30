@@ -14,7 +14,7 @@
   src: url(../../fonts/Space_Mono/Lexend_Deca/static/LexendDeca-Regular.ttf);
 }
 .container {
-  max-width: 1440px;
+  max-width: 1106px;
   width: 100%;
   margin: 0 auto;
   font-family: "Space Mono", monospace;
@@ -53,7 +53,7 @@
 }
 @media (max-width: 375px) {
   .navbar__leftbox__logo {
-    margin: 22px 0 22px 99px;
+    margin: 0 0 22px 40px;
   }
 }
 .navbar__leftbox__menu {
@@ -106,16 +106,21 @@
     margin: 22px 40px 22px 0;
   }
 }
+@media (max-width: 375px) {
+  .navbar__rightbox__button {
+    display: none;
+  }
+}
 .navbar__leftbox__add button {
   background: none;
   border: none;
 }
 .navbar__remove__btn {
   display: none;
-  margin: 23px 0 0 33px;
+  margin: 43px 0 0 33px;
 }
 .navbar__add__btn {
-  margin: 23px 0 0 33px;
+  margin: 43px 0 0 33px;
 }
 
 .show {
@@ -221,7 +226,6 @@
   background-color: #FCB72B;
   color: #FFF;
   text-align: center;
-  font-family: Space Mono;
   font-size: 15px;
   font-style: normal;
   font-weight: 700;
@@ -252,11 +256,14 @@
     width: 10px;
     height: 512px;
     flex-shrink: 0;
+    margin-top: 0;
+    padding-top: 80px;
   }
 }
 @media (max-width: 375px) {
   .section1 {
     background-image: none;
+    margin: 0 0 0 32px;
   }
 }
 
@@ -283,23 +290,31 @@
   .servis {
     display: flex;
   }
+  .servis__img {
+    margin-right: 79px;
+  }
+}
+@media (max-width: 768px) and (max-width: 375px) {
+  .servis__img {
+    margin: 0 auto;
+    width: 56px;
+    height: 56px;
+    flex-shrink: 0;
+  }
 }
 @media (max-width: 375px) {
   .servis {
     flex-direction: column;
   }
 }
-.servis__img {
-  margin-right: 79px;
-}
 @media (max-width: 375px) {
-  .servis__img {
-    margin-right: 20px;
+  .servis__text {
+    flex-direction: column;
   }
 }
 .servis__text__h4 {
   margin-top: 40px;
-  max-width: 600px;
+  max-width: 450px;
   color: #495567;
   font-size: 24px;
   font-style: normal;
@@ -321,7 +336,6 @@
 }
 .servis__text__p {
   max-width: 350px;
-  margin-top: 27px;
   color: #939CAA;
   font-family: "Lexend Deca", sans-serif;
   font-size: 15px;
